@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu de Videogames NÍCOLAS NOVAES RA:12523174990</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Museu de Videogames</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#exposicoes">Exposições</a></li>
+                <li><a href="#horarios">Horários</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Museu</h2>
+            <p>Bem-vindo ao Museu de Videogames, um espaço dedicado à história e evolução dos videogames. Aqui, você encontrará exposições interativas, consoles clássicos e muito mais.</p>
+            <img src="images/museu.jpg" alt="Museu de Videogames" class="responsive-img">
+        </section>
+
+        <section id="exposicoes">
+            <h2>Exposições Atuais</h2>
+            <div class="exposicao">
+                <h3>Consoles Clássicos</h3>
+                <p>Explore os consoles que marcaram época, desde o Atari até os mais recentes lançamentos.</p>
+                <img src="images/consoles.png" alt="Consoles Clássicos" class="responsive-img">
+            </div>
+            <div class="exposicao">
+                <h3>História dos Jogos</h3>
+                <p>Uma viagem no tempo pelos jogos que definiram gerações e moldaram a indústria dos videogames.</p>
+                <img src="images/games.jpg" alt="História dos Jogos" class="responsive-img">
+            </div>
+        </section>
+
+        <section id="horarios">
+            <h2>Horários de Funcionamento</h2>
+            <p>Segunda a Sexta: 10:00 - 18:00</p>
+            <p>Sábado e Domingo: 12:00 - 20:00</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="contact-form" action="submit-form.php" method="post" onsubmit="return validateForm()">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Museu de Videogames. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
